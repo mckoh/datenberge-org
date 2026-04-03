@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Webseite</title>
+    <style>
+        /* Grunddesign */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Container für den Inhalt */
+        .container {
+            max-width: 800px;
+            width: 90%;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        /* Logo Styling */
+        .logo {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        /* Textbereich */
+        .info-section {
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        /* Video Container (Responsiv 16:9) */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            border-radius: 12px;
+            background: #000;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="logo.png" alt="Mein Logo" class="logo">
+
+        <div class="info-section">
+            <div class="info-section">
+            <h1>Daten verstehen, Werte schaffen.</h1>
+            <p>
+                Herzlich willkommen! Ich bin Data Scientist und Hochschulprofessor für Data Science.
+                In meiner Forschung und Lehre dreht sich alles darum, wie aus rohen Daten wertvolle Erkenntnisse entstehen.
+            </p>
+            <p>
+                Auf meinem YouTube-Kanal nehme ich dich mit auf eine Reise entlang der gesamten
+                <strong>Daten-Wertschöpfungskette</strong>: Von der ersten Datenverarbeitung über die Analyse
+                bis hin zur Implementierung komplexer Modelle. Schau dir unten mein aktuellstes Video an!
+            </p>
+        </div>
+        </div>
+
+        <div class="video-container">
+            <iframe
+                src="https://www.youtube.com/embed?listType=user_uploads&list=UC3xF0cGhdXQYmdcyaNbcTqw"
+                title="Mein aktuellstes Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+</body>
+</html>
